@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Петян Жирни](https://up.htmlacademy.ru/htmlcss/29/user/1606269).
-* Наставник: [Александр Григорьев](https://up.htmlacademy.ru/htmlcss/29/user/43108).
+* Наставник: [Маргарита Попова](https://up.htmlacademy.ru/htmlcss/29/user/230166).
 
 ---
 
