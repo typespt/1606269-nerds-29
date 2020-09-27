@@ -1,0 +1,14 @@
+
+:root {
+    --buttons-red: #FB565A;
+    --buttons-green: #00CA74;
+    --buttons-yellow: #EFC849;
+    --buttons-grey: #EEEEEE;
+    --text-color-black: #283136;
+    --clear-white: #FFFFFF;
+}
+
+
+body {
+font-family: "Roboto", Arial, sans-serif;
+}
