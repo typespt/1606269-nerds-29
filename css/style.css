@@ -6,9 +6,46 @@
     --buttons-grey: #EEEEEE;
     --text-color-black: #283136;
     --clear-white: #FFFFFF;
+    --logos-peace-black: #000000;
+    --logos-touch-grey: #A6A6A6;
+    --nav-aiming-red: #FB565A;
+
 }
 
 
 body {
 font-family: "Roboto", Arial, sans-serif;
+min-width: 960px;
+margin: 0;
+padding: 0;
+font-size: 16px;
+line-height: 24px;
+font-weight: normal;
+font-style: normal;
+color: var(--text-color-black);
+background-color: var(--clear-white);
+background-image: url("../img/bg.jpg");
+background-position: top center;
+background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+  }
+
+.main-nav{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.main-nav {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--text-color-black);
 }
