@@ -1,181 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/style.css">
+
 
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс каталог</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Нёрдс каталог</title>
 </head>
 
 <body>
-    <header>
-        <a class="logo" href="index.html">
-            <img class="logo-image" src="https://via.placeholder.com/160x65" alt="Логотип студии Нёрдс" width="160"
-                height="65">
-        </a>
-        <nav class="main-nav">
-            <ul class="main-nav-list">
-                <li class="main-nav-item">
-                    <a href="index.html">Студия</a></li>
-                <li class="main-nav-item">
-                    <a href="">Клиенты</a></li>
-                <li class="main-nav-item">
-                    <a href="#">Магазин</a></li>
-                <li class="main-nav-item">
-                    <a href="">Контакты</a></li>
-            </ul>
-            <div class="user">
-                <a class="user-basket" href="#">Корзина</a>
+  <header>
+    <a class="logo" href="index.html">
+      <img class="logo-image" src="https://via.placeholder.com/160x65" alt="Логотип студии Нёрдс" width="160"
+        height="65">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li class="main-nav-item">
+          <a href="index.html">Студия</a></li>
+        <li class="main-nav-item">
+          <a href="">Клиенты</a></li>
+        <li class="main-nav-item">
+          <a href="#">Магазин</a></li>
+        <li class="main-nav-item">
+          <a href="">Контакты</a></li>
+      </ul>
+      <div class="user">
+        <a class="user-basket" href="#">Корзина</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Магазин готовых шаблонов</h1>
+
+    <section class="filters">
+      <h2 class="visually-hidden">Фильтр</h2>
+      <form id="filters-form" class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Стоимость:</legend>
+        </fieldset>
+        <fieldset>
+          <legend>Сетка:</legend>
+
+          <p><label for="filters-form-site-type-1">Адаптивная</label>
+            <input type="radio" name="filters-form-site" id="filters-form-site-type-1" checked value="adaptive"></p>
+
+          <p><label for="filters-form-site-type-2">Фиксированная</label>
+            <input type="radio" name="filters-form-site" id="filters-form-site-type-2" value="fixed"></p>
+
+          <p><label for="filters-form-site-type-3">Резиновая</label>
+            <input type="radio" name="filters-form-site" id="filters-form-site-type-3" value="rubber"></p>
+
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+
+          <p><label for="filters-form-features-type-1">Слайдер</label>
+            <input type="checkbox" name="filters-form-features" id="filters-form-features-type-1" checked
+              value="slider"></p>
+
+          <p><label for="filters-form-features-type-2">Блок преимуществ</label>
+            <input type="checkbox" name="filters-form-features" id="filters-form-features-type-2"
+              value="array-benefits"></p>
+
+          <p><label for="filters-form-features-type-3">Новости</label>
+            <input type="checkbox" name="filters-form-features" id="filters-form-features-type-3" checked value="news">
+          </p>
+
+          <p><label for="filters-form-features-type-4">Галерея</label>
+            <input type="checkbox" name="filters-form-features" id="filters-form-features-type-4" value="gallery"></p>
+
+          <p><label for="filters-form-features-type-5">Корзина</label>
+            <input type="checkbox" name="filters-form-features" id="filters-form-features-type-5" value="basket"></p>
+        </fieldset>
+        <p><button>Показать</button></p>
+      </form>
+    </section>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Каталог</h2>
+
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <article class="product">
+            <a href=""><img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Sedona"></a>
+            <div class="product-content">
+              <h3><a href="">Sedona</a></h3>
+              <p class="item-menu">Информационный сайт<br>для туристов</p>
+              <p class="item-price"><a href="">9 900 ₽</a></p>
             </div>
+          </article>
+        </li>
+        <li class="catalog-item">
+          <article class="product">
+            <a href=""><img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Pink"></a>
+            <div class="product-content">
+              <h3><a href="">Pink App</a></h3>
+              <p class="item-menu">Продуктовый лендинг<br>приложения для iOS и Android</p>
+              <p class="item-price"><a href="">9 900 ₽</a></p>
+            </div>
+          </article>
+        </li>
+        <li class="catalog-item">
+          <article class="product">
+            <a href=""><img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Borodinski"></a>
+            <div class="product-content">
+              <h3><a href="">Borodinski</a></h3>
+              <p class="item-menu">Сайт салона красоты.<br>Для мужчин, да.</p>
+              <p class="item-price"><a href="">9 900 ₽</a></p>
+            </div>
+          </article>
+        </li>
+        <li class="catalog-item">
+          <article class="product">
+            <a href=""><img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Mishka"></a>
+            <div class="product-content">
+              <h3><a href="">Mishka</a></h3>
+              <p class="item-menu">Интернет-магазин <br>вязаных игрушек</p>
+              <p class="item-price"><a href="">9 900 ₽</a></p>
+            </div>
+          </article>
+        </li>
+        <li class="catalog-item">
+          <article class="product">
+            <a href=""><img src="https://via.placeholder.com/358x578" width="358" height="578" alt="School"></a>
+            <div class="product-content">
+              <h3><a href="">A Plus</a></h3>
+              <p class="item-menu">Лендинг курсов повышения квалификации</p>
+              <p class="item-price"><a href="">9 900 ₽</a></p>
+            </div>
+          </article>
+        </li>
+        <li class="catalog-item">
+          <article class="product">
+            <a href=""><img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Drink"></a>
+            <div class="product-content">
+              <h3><a href="">Kbact</a></h3>
+              <p class="item-menu">Промо-сайт производителя<br>крафтового кваса</p>
+              <p class="item-price"><a href="">9 900 ₽</a></p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
 
-        </nav>
-    </header>
+    <section class="pagination">
+      <h3 class="visually-hidden">Пагинация</h3>
+      <ul class="pagination-list">
+        <li class=".pagination-item.active"><a href="#">1</a></li>
+        <li class="pagination-item"><a href="">2</a></li>
+        <li class="pagination-item"><a href="">3</a></li>
+        <li class="pagination-item"><a href="">Следующая</a></li>
+      </ul>
+    </section>
 
-    <main>
-        <h1>Магазин готовых шаблонов</h1>
+    <section class="map">
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <img src="https://via.placeholder.com/1440x416" width="1440" height="416" alt="Карта">
+      <article class="contact-card">
+        <h3>
+          Nёrds design studio
+        </h3>
+        <address>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</address>
+        <p>тел. <a href="tel:+781227575">+7 (812)275-75-75</a></p>
+      </article>
+    </section>
+  </main>
 
-        <section class="filters">
-            <h2 class="visually-hidden">Фильтр</h2>
-            <form id="filters-form" class="filters-form" action="https://echo.htmlacademy.ru" method="get">
-                <fieldset>
-                    <legend>Стоимость:</legend>
+  <footer>
+    <section class="social">
+      <h3 class="visually-hidden">Мы в социальных сетях</h3>
+      <ul class="social-list">
+        <li class="social-item"><a href="https://vk.com"><span class="visually-hidden">Vkontakte</span></a></li>
+        <li class="social-item"><a href="https://facebook.com"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social-item"><a href="https://instagram.com"><span class="visually-hidden">Instagram</span></a></li>
+      </ul>
+    </section>
 
-                </fieldset>
-                <fieldset>
-                    <legend>Сетка:</legend>
-
-                    <p><label for="filters-form-site-type-1">Адаптивная</label>
-                        <input type="radio" name="filters-form-site" id="filters-form-site-type-1" checked
-                            value="adaptive"></p>
-
-                    <p><label for="filters-form-site-type-2">Фиксированная</label>
-                        <input type="radio" name="filters-form-site" id="filters-form-site-type-2" value="fixed"></p>
-
-                    <p><label for="filters-form-site-type-3">Резиновая</label>
-                        <input type="radio" name="filters-form-site" id="filters-form-site-type-3" value="rubber"></p>
-
-                </fieldset>
-                <fieldset>
-                    <legend>Особенности:</legend>
-
-                    <p><label for="filters-form-features-type-1">Слайдер</label>
-                        <input type="checkbox" name="filters-form-features" id="filters-form-features-type-1" checked
-                            value="slider"></p>
-
-                    <p><label for="filters-form-features-type-2">Блок преимуществ</label>
-                        <input type="checkbox" name="filters-form-features" id="filters-form-features-type-2"
-                            value="array-benefits"></p>
-
-                    <p><label for="filters-form-features-type-3">Новости</label>
-                        <input type="checkbox" name="filters-form-features" id="filters-form-features-type-3" checked
-                            value="news"></p>
-
-                    <p><label for="filters-form-features-type-4">Галерея</label>
-                        <input type="checkbox" name="filters-form-features" id="filters-form-features-type-4"
-                            value="gallery"></p>
-
-                    <p><label for="filters-form-features-type-5">Корзина</label>
-                        <input type="checkbox" name="filters-form-features" id="filters-form-features-type-5"
-                            value="basket"></p>
-                </fieldset>
-                <p><button>Показать</button></p>
-            </form>
-        </section>
-
-        <section class="catalog">
-            <h2 class="visually-hidden">Каталог</h2>
-
-            <ul class="catalog-list">
-                <li class="catalog-item">
-                    <article class="product">
-                    <a href=""><img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Sedona"></a>
-                    <div class="product-content">
-                        <h3><a href="">Sedona</a></h3>
-                        <p class="item-menu">Информационный сайт<br>для туристов</p>
-                        <p class="item-price"><a href="">9 900 ₽</a></p>
-                    </div></article></li>
-                <li class="catalog-item">
-                    <article class="product">
-                    <a href=""><img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Pink"></a>
-                    <div class="product-content">
-                        <h3><a href="">Pink App</a></h3>
-                        <p class="item-menu">Продуктовый лендинг<br>приложения для iOS и Android</p>
-                        <p class="item-price"><a href="">9 900 ₽</a></p>
-                    </div></article></li>
-                <li class="catalog-item">
-                    <article class="product">
-                    <a href=""><img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Borodinski"></a>
-                    <div class="product-content">
-                        <h3><a href="">Borodinski</a></h3>
-                        <p class="item-menu">Сайт салона красоты.<br>Для мужчин, да.</p>
-                        <p class="item-price"><a href="">9 900 ₽</a></p>
-                    </div></article></li>
-                <li class="catalog-item">
-                    <article class="product">
-                    <a href=""><img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Mishka"></a>
-                    <div class="product-content">
-                        <h3><a href="">Mishka</a></h3>
-                        <p class="item-menu">Интернет-магазин <br>вязаных игрушек</p>
-                        <p class="item-price"><a href="">9 900 ₽</a></p>
-                    </div></article></li>
-                <li class="catalog-item">
-                    <article class="product">
-                    <a href=""><img src="https://via.placeholder.com/358x578" width="358" height="578" alt="School"></a>
-                    <div class="product-content">
-                        <h3><a href="">A Plus</a></h3>
-                        <p class="item-menu">Лендинг курсов повышения квалификации</p>
-                        <p class="item-price"><a href="">9 900 ₽</a></p>
-                    </div></article></li>
-                <li class="catalog-item">
-                    <article class="product">
-                    <a href=""><img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Drink"></a>
-                    <div class="product-content">
-                        <h3><a href="">Kbact</a></h3>
-                        <p class="item-menu">Промо-сайт производителя<br>крафтового кваса</p>
-                        <p class="item-price"><a href="">9 900 ₽</a></p>
-                    </div></article></li>
-            </ul>
-        </section>
-
-        <section class="pagination">
-            <h3 class="visually-hidden">Пагинация</h3>
-            <ul class="pagination-list">
-                <li class=".pagination-item.active"><a href="#">1</a></li>
-                <li class="pagination-item"><a href="">2</a></li>
-                <li class="pagination-item"><a href="">3</a></li>
-                <li class="pagination-item"><a href="">Следующая</a></li>
-            </ul>
-        </section>
-
-        <section class="map">
-            <h2 class="visually-hidden">Как нас найти</h2>
-            <img src="https://via.placeholder.com/1440x416" width="1440" height="416" alt="Карта">
-            <article class="contact-card">
-                <h3>
-                    Nёrds design studio
-                </h3>
-                <address>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</address>
-                <p>тел. <a href="tel:+781227575">+7 (812)275-75-75</a></p>
-            </article>
-        </section>
-    </main>
-
-    <footer>
-        <section class="social">
-            <h3 class="visually-hidden">Мы в социальных сетях</h3>
-            <ul class="social-list">
-                <li class="social-item"><a href="https://vk.com"><span class="visually-hidden">Vkontakte</span></a></li>
-                <li class="social-item"><a href="https://facebook.com"><span class="visually-hidden">Facebook</span></a></li>
-                <li class="social-item"><a href="https://instagram.com"><span class="visually-hidden">Instagram</span></a></li>
-            </ul>
-        </section>
-
-        <div class="discount">
-            <p>Давайте дружить, это выгодно!</p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-    </footer>
+    <div class="discount">
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
 </body>
+
 </html>
