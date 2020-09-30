@@ -10,6 +10,9 @@
     --light-grey: #A6A6A6;
     --light-red: #FB565A;
     --grey: #666666;
+    --gentle-white: #E1E1E1;
+    --crimson-red:  #E74246;
+    --dark-crimson-red: #D7373B;
 
 }
 /* general */
@@ -76,8 +79,7 @@ img {
   line-height: 24px;
 }
 
-.button,
-.promo-button {
+.button {
   background-color: var(--basic-red);
   color: var(--basic-white);
   font-size: 16px;
@@ -93,12 +95,12 @@ img {
   list-style: none;
 }
 
-.reviews-card,
-h3 {
+.reviews-card, h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  color: var(--basic-text-color);
 }
 
 .reviews-card,
@@ -164,3 +166,109 @@ p {
   font-size: 16px;
   line-height: 24px;
 }
+
+.main-statistic dt {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.main-statistic dd {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* map */
+.map a {
+  text-decoration: none;
+  color: var(--basic-text-color);
+}
+
+.map h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contact-card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+}
+
+.map-contact-button {
+  background-color: var(--light-red);
+  color: var(--basic-white);
+  border-radius: 3px;
+  width: 219px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.map-contact-button:hover {
+  background-color: var(--crimson-red);
+  color: var(--basic-white);
+  border-radius: 3px;
+  width: 219px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.map-contact-button:active {
+  background-color: var(--dark-crimson-red);
+  color: var(--basic-white);
+  border-radius: 3px;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  width: 219px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* partners */
+
+.sponsors-list img {
+  opacity: 0.2;
+}
+
+.sponsors-list img:hover {
+  opacity: 1;
+}
+
+.sponsors-list img:active {
+  opacity: 0.1;
+}
+
+/* footer socials */
+
+.social-item {
+  background: linear-gradient(0deg, var(--gentle-white), var(--gentle-white)), var(--basic-white);
+}
+
+.social-item:hover {
+  background: linear-gradient(0deg, var(--crimson-red), var(--crimson-red)), var(--basic-white);
+}
+
+.social-item:active {
+  background: linear-gradient(0deg, var(--dark-crimson-red),var(--dark-crimson-red)), var(--basic-white);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* footer */
+
+.discount-large-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.discount-normal-text {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
